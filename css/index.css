@@ -168,6 +168,8 @@ p {
   flex-direction: column;
   margin: 0 auto;
   padding-top: 12px;
+  background: #F6F6F6;
+  border-bottom: #F1F1F1;
 }
 .title-nav h1 {
   font-size: 4rem;
@@ -178,7 +180,7 @@ p {
   padding-bottom: 13px;
 }
 .title-nav nav a {
-  color: black;
+  color: #454A59;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
