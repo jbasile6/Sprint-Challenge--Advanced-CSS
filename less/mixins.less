@@ -1,1 +1,20 @@
 // Mixins Here
+
+.button-color-custom(@background, @font) {
+    background-color:@background;
+    color: @font;
+  }
+
+  .button-color-phone() {
+    background-color: @btn-bg-color;
+    color: white;
+  }
+  
+
+  .custom-flex(@justify, @align, @wrap, @direction) {
+      display:flex;
+      justify-content: @justify;
+      align-items: @align;
+      flex-wrap: @wrap;
+      flex-direction: @direction;
+  }
