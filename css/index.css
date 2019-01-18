@@ -155,12 +155,17 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
+.container,
+.contact-body {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 .title-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.75;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,6 +175,9 @@ p {
   padding-top: 12px;
   background: #F6F6F6;
   border-bottom: #F1F1F1;
+}
+.title-nav:hover {
+  opacity: 1;
 }
 .title-nav h1 {
   font-size: 4rem;
@@ -185,6 +193,15 @@ p {
   font-weight: bold;
   font-size: 1.5rem;
   padding: 0 16px;
+}
+.title-nav nav a:hover {
+  font-size: 300%;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .title-nav nav a:hover {
+    font-size: 200%;
+  }
 }
 footer {
   color: #22283B;
@@ -209,10 +226,11 @@ footer {
   border-radius: 5px;
   margin: 0 auto;
   width: 100%;
+  padding-top: 100px;
 }
 @media (max-width: 500px) {
   .home .intro .header-image {
-    height: 125px;
+    height: 225px;
   }
 }
 .home .space-images {
@@ -326,4 +344,24 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.contact-body {
+  padding-top: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contact-body form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact-body form input {
+  height: 50px;
+}
+.contact-body form input:focus {
+  border: 3px solid #22283A;
+}
+.contact-body input[type=message] {
+  height: 400px;
+  align-items: flex-start;
 }
