@@ -46,9 +46,12 @@ REM is used for accessibility purposes as it lets the user settings dictate the 
 
 4. How would you describe preprocessing to someone new to CSS?
 
-Preprocessing is a tool that allows you to break the CSS into
+Preproccessing is way of writing each element and class tag out vertically in nested brackets and allowing a preprocessor to automatically covert the nested brackets into the long form "vanilla" CSS.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept is the mixins. I look forward to building my own library of parametric mixins that I will know off the top of my head and save me some time writing out CSS. Nested media queries has given me the most trouble so far. I felt good about it on today's spring challenge so hopefully it is no longer an issue.
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
